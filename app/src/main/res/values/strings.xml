@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FamilyMapProject</string>
+    <string name="Server_Host">Server Host</string>
+    <string name="Server_Port">Server Port</string>
+    <string name="Email_Text">Email</string>
+    <string name="Register">Register</string>
+    <string name="Sign_in">Sign in</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="UserName">UserName</string>
+    <string name="Password">Password</string>
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="Gender">Gender</string>
+    <string name="title_activity_family_map">Map</string>
+</resources>

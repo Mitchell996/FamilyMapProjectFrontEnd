@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+     />
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="40dp"
+android:id="@+id/personBox">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mapGenderIcon"
+    android:src="@drawable/ic_generic_person"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mapPersonName"
+    android:text="Hey fetcher, click on a marker"
+    android:layout_alignTop="@+id/mapGenderIcon"
+    android:layout_alignLeft="@+id/mapGenderIcon"
+    android:layout_toRightOf="@+id/mapGenderIcon"
+    android:layout_marginLeft="65dp"
+    android:layout_marginTop="5dp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mapPersonEvent"
+    android:text="it will show you stuff"
+    android:layout_marginLeft="100dp"
+    android:layout_marginStart="65dp"
+    android:layout_below="@+id/mapPersonName"
+    android:layout_toEndOf="@+id/mapGenderIcon"
+    android:textSize="14dp"
+    android:layout_alignLeft="@+id/mapGenderIcon"
+    android:layout_toRightOf="@+id/mapGenderIcon" />
+</RelativeLayout>
+</LinearLayout>
